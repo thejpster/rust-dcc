@@ -1,4 +1,6 @@
-//! This is rust-dcc, a Digital Command and Control library for Rust.
+//! The message handler accepts messages and emits packets.
+//! We need a MessageReceiver trait implemented by something useful here,
+//! but that can also be implemented by a unit test in the layer above.
 
 // ****************************************************************************
 //
@@ -6,10 +8,7 @@
 //
 // ****************************************************************************
 
-pub mod message;
-pub mod packet;
-pub mod timer;
-pub mod control;
+// None
 
 // ****************************************************************************
 //
@@ -56,4 +55,3 @@ pub mod control;
 // End Of File
 //
 // ****************************************************************************
-
