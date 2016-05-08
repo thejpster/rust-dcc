@@ -1,0 +1,6 @@
+[package]
+name = "rust-dcc"
+version = "0.1.0"
+authors = ["theJPster <github@thejpster.org.uk>"]
+
+[dependencies]
