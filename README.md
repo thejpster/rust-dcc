@@ -31,7 +31,7 @@ At the top is the Application. This receives Commands from the command parser an
 
 Heading down the DCC stack, below the Application is the packet layer. This receives Messages and emits packets containing arrays of bits into specified registers.
 
-Next is the Bitstream layer, which encodes the packets as a bitstream with the correct timing. This makes use of a Timing object.
+Next is the Bitstream layer, which encodes the packets as a bitstream with the correct timing. This makes use of a Timing object. It buffers a series of packets which are sent out in sequence.
 
 The timer object allows the bottom layer to schedule output transitions with precise timing. It exists as a separate entity to allow for unit testing in a non-realtime environment.
 
