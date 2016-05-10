@@ -5,19 +5,19 @@ DCC is defined by the National Model Railroad Association (NMRA) in [http://www.
 
 To aid compatibility with existing desktop software, rust-dcc will implement the Arduino DCC++ protocol set.
 
-* <t REGISTER CAB SPEED DIRECTION>: sets the throttle for a mobile engine decoder using 128-step speeds
-* <f CAB BYTE1 [BYTE2]>: controls mobile engine decoder functions F0-F28
-* <a ADDRESS SUBADDRESS ACTIVATE>: controls stationary accessory decoders
-* <T ID THROW>: controls turnouts connected to stationary accessory decoders
-* <w CAB CV VALUE>: writes a configuration variable byte to an engine decoder on the main ops track
-* <b CAB CV BIT VALUE>: sets/clear a configuration variable bit in an engine decoder on the main operations track
-* <W CV VALUE CALLBACKNUM CALLBACKSUB>: writes a configuration variable byte to an engine decoder on the programming track
-* <B CV BIT VALUE CALLBACKNUM CALLBACKSUB>: sets/clear a configuration variable bit in an engine decoder on the programming track
-* <R CV CALLBACKNUM CALLBACKSUB>: reads a configuration variable byte from an engine decoder on the programming track
-* <1>: turns on track power
-* <0>: turns off track power
-* <c>: reads current draw from main operations track
-* <s>: returns status messages, including power state, turnout states, and sketch version
+* `<t REGISTER CAB SPEED DIRECTION>`: sets the throttle for a mobile engine decoder using 128-step speeds
+* `<f CAB BYTE1 [BYTE2]>`: controls mobile engine decoder functions F0-F28
+* `<a ADDRESS SUBADDRESS ACTIVATE>`: controls stationary accessory decoders
+* `<T ID THROW>`: controls turnouts connected to stationary accessory decoders
+* `<w CAB CV VALUE>`: writes a configuration variable byte to an engine decoder on the main ops track
+* `<b CAB CV BIT VALUE>`: sets/clear a configuration variable bit in an engine decoder on the main operations track
+* `<W CV VALUE CALLBACKNUM CALLBACKSUB>`: writes a configuration variable byte to an engine decoder on the programming track
+* `<B CV BIT VALUE CALLBACKNUM CALLBACKSUB>`: sets/clear a configuration variable bit in an engine decoder on the programming track
+* `<R CV CALLBACKNUM CALLBACKSUB>`: reads a configuration variable byte from an engine decoder on the programming track
+* `<1>`: turns on track power
+* `<0>`: turns off track power
+* `<c>`: reads current draw from main operations track
+* `<s>`: returns status messages, including power state, turnout states, and sketch version
 
 see https://github.com/DccPlusPlus/BaseStation for more details.
 
